@@ -1,0 +1,93 @@
+<odoo>
+<!-- Library App Menu -->
+<menuitem id="menu_khazina" name="الخزينة" />
+
+ 
+
+
+
+
+
+<!-- Action to open the Book list -->
+<record id="action_khazina_book" model=
+"ir.actions.act_window">
+<field name="name">محضر معاينة </field>
+<field name="res_model">khazina.book</field>
+<field name="view_mode">tree,form</field>
+</record>
+
+
+<!-- Action to open the Clients list -->
+<record id="action_khazina_clients" model=
+"ir.actions.act_window">
+ <field name="view_id" ref="view_form_khazina"/>
+<field name="name">محضر حساب</field>
+<field name="res_model">khazina.book</field>
+<field name="view_mode">tree,form,graph,pivot</field>
+</record>
+
+
+
+
+
+
+
+
+
+<!-- Menu item to open the Book list -->
+
+<menuitem id="menu_khazina_proceedings"
+name="محضر"
+parent="menu_khazina"
+action="action_khazina_book"
+/>
+
+
+
+<menuitem id="menu_khazina_book"
+name="محضر معاينة و اشهاد على مبلغ الصندوق"
+parent="menu_khazina_proceedings"
+action="action_khazina_book"
+/>
+
+
+
+<menuitem id="menu_khazina_calcul"
+name="محضر حساب مبلغ الصندوق"
+parent="menu_khazina_proceedings"
+action="action_khazina_clients"
+/>
+
+
+
+<menuitem id="menu_khazina_provide"
+name="تمويل الخزينة"
+parent="menu_khazina"
+action="action_khazina_clients"
+/>
+
+<menuitem id="menu_khazina_change"
+name=" أمر بالصرف"
+parent="menu_khazina"
+action="action_khazina_clients"
+/>
+
+<menuitem id="menu_khazina_reauest"
+name=" طلب "
+parent="menu_khazina"
+action="action_khazina_clients"
+/>
+<menuitem id="menu_khazina_loan"
+name=" طلب قرض"
+parent="menu_khazina_reauest"
+action="action_khazina_clients"
+/>
+
+
+<menuitem id="menu_khazina_feed"
+name=" طلب تغذية"
+parent="menu_khazina_reauest"
+action="action_khazina_clients"
+/>
+
+</odoo>
