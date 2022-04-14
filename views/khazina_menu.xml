@@ -101,10 +101,19 @@ action="action_khazina_coins_conversion"
 
 
 
+<menuitem id="menu_khazina_order"
+name="أمر"
+parent="menu_khazina"
+action="action_khazina_request_loan"
+/>
 
 
-
-
+  <menuitem id="menu_khazina_order_coins_conversion"
+name="  أمر تحويل النقود المعدنية    "
+parent="menu_khazina_order"
+action="action_khazina_coins_conversion"
+/>
+ 
 
 
 
@@ -131,6 +140,37 @@ name=" محضر معاينة و اشهاد على مبلغ الصندوق"
 parent="menu_khazina_proceeding"
 action="action_khazina_proceeding"
 />
+
+
+
+
+<!-- Action to open the Clients list -->
+<record id="action_khazina_testimonial_coins_conversion" model=
+"ir.actions.act_window">
+<field name="name">  اشهاد بافراغ و تنفيد أمر التحويل لنقود معدنية موجهة الى أوراق معدنية   </field>
+<field name="res_model">khazina.testimonial_coins_conversion</field>
+<field name="view_id" ref="khazina.view_form_testimonial_coins_conversion"/>
+<field name="view_id" ref="khazina.view_tree_coins_conversion"/>
+<field name="view_mode">tree,form</field>
+</record>
+
+
+
+<menuitem id="menu_khazina_testimonial"
+name="اشهاد"
+parent="menu_khazina"
+action="action_khazina_testimonial_coins_conversion"
+/>
+
+
+
+<menuitem id="menu_khazina_testimonial_coins_conversion"
+name=" اشهاد بافراغ و تنفيد أمر التحويل لنقود معدنية موجهة الى أوراق معدنية"
+parent="menu_khazina_testimonial"
+action="action_khazina_testimonial_coins_conversion"
+/>
+
+
 
 
 </odoo>

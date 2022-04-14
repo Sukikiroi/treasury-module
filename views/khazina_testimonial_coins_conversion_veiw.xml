@@ -1,0 +1,66 @@
+<odoo>
+<record id="view_form_testimonial_coins_conversion" model="ir.ui.view">
+<field name="name">Testimonial Coins Conversion Form</field>
+<field name="model">khazina.testimonial_coins_conversion</field>
+<field name="arch" type="xml">
+<form class="form">
+<header>
+<!-- Buttons will go here -->
+ 
+ 
+</header>
+<sheet>
+<!-- Content goes here: -->
+<group class="groupone">
+ <label for="name" class="labeltest"  />
+<field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+<div class="container">
+  <notebook>
+      <page string="Page1">
+        <group>
+<field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+        </group>
+      </page>
+      <page string="Page2">
+        <group>
+  <field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+        </group>
+      </page>
+    </notebook>
+  
+</div>
+</group>
+</sheet>
+</form>
+</field>
+</record>
+
+
+<record id="view_tree_coins_conversion" model="ir.ui.view">
+<field name="name">Testimonial coins Conversion List</field>
+<field name="model">khazina.testimonial_coins_conversion</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+ 
+<field name="date_published"/>
+</tree>
+</field>
+</record>
+
+
+
+
+ 
+
+
+</odoo>
