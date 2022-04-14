@@ -10,7 +10,7 @@ eval="[(4, ref('base.group_user'))]"/>
 </record>
 
 <!-- Khazina Manager Group -->
-<record id="khazina_group_user" model="res.groups">
+<record id="khazina_group_manager" model="res.groups">
 <field name="name">Manager</field>
 <field name="category_id"
 ref="base.module_category_services_khazina"/>

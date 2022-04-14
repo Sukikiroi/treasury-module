@@ -2,9 +2,9 @@ from odoo import fields, models
 
 
 
-class Loan(models.Model):
- _name = "khazina.loan"
- _description = "Khazina Loan"
+class Proceedings(models.Model):
+ _name = "khazina.proceeding"
+ _description = "Khazina Proceedings"
  name = fields.Char("Title", required=True)
  isbn = fields.Char("ISBN")
  active = fields.Boolean("Active?", default=True)
