@@ -9,3 +9,9 @@ class Loan(models.Model):
     isbn = fields.Char("ISBN")
     active = fields.Boolean("Active?", default=True)
     date_published = fields.Date()
+    state= fields.Char()
+
+
+
+    def button_done():
+        print('state')

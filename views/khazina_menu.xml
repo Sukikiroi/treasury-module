@@ -173,4 +173,23 @@ action="action_khazina_testimonial_coins_conversion"
 
 
 
+<!-- Action to open Request fund Deposit -->
+<record id="action_khazina_request_fund_deposit" model=
+"ir.actions.act_window">
+<field name="name"> طلب ايداع مال الصندوق المحسوب و المصادق في الخزينة   </field>
+<field name="res_model">khazina.request_fund_deposit</field>
+<field name="view_id" ref="khazina.view_form_request_fund_deposit"/>
+<field name="view_id" ref="khazina.view_tree_request_fund_deposit"/>
+</record>
+
+
+
+
+  <menuitem id="menu_khazina_request_fund_deposit"
+name="  طلب ايداع مال الصندوق المحسوب و المصادق في الخزينة    "
+parent="menu_khazina_request"
+action="action_khazina_request_fund_deposit"
+/>
+ 
+
 </odoo>

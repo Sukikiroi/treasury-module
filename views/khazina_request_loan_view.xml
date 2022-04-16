@@ -8,6 +8,18 @@
 <!-- Buttons will go here -->
  
 <button string=" الافتتاح اليومي"></button>
+<field name="state" invisible="True" />
+
+<button name="button_done"
+type="object"
+string="Return Books"
+attrs="{'invisible':
+[('state', 'in', ['new', 'done', 'cancel'])]}"
+class="oe_highlight"
+/>
+<field name="state"
+widget="statusbar"
+options="{'clickable': True, 'fold_field': 'fold'}" />
 </header>
 <sheet>
 <!-- Content goes here: -->

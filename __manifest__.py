@@ -12,6 +12,7 @@
         "security/khazina_security.xml",
         "security/ir.model.access.csv",
         "views/khazina_request_loan_view.xml",
+        "views/khazina_request_fund_deposit_view.xml",
         "views/khazina_testimonial_coins_conversion_veiw.xml",
         "views/khazina_coins_conversion_view.xml",
         "views/khazina_menu.xml",

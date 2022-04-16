@@ -2,6 +2,7 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_book_user,khazinaUser,model_khazina_proceeding,khazina_group_user,1,1,1,0
 access_loan_user,khazinaUser,model_khazina_request_loan,khazina_group_user,1,1,1,0
 access_feed_user,khazinaUser,model_khazina_request_feed,khazina_group_user,1,1,1,0
+access_fund_deposit_user,khazinaUser,model_khazina_request_fund_deposit,khazina_group_user,1,1,1,0
 access_coin_conversion_user,khazinaUser,model_khazina_coins_conversion,khazina_group_user,1,1,1,0
 access_testimonial_coins_conversion_user,khazinaUser,model_khazina_testimonial_coins_conversion,khazina_group_user,1,1,1,0
 

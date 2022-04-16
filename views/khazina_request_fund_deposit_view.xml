@@ -1,0 +1,66 @@
+<odoo>
+<record id="view_form_request_fund_deposit" model="ir.ui.view">
+<field name="name"> Request Fund Deposit Form</field>
+<field name="model">khazina.request_fund_deposit</field>
+<field name="arch" type="xml">
+<form class="form">
+<header>
+<!-- Buttons will go here -->
+ 
+ 
+</header>
+<sheet>
+<!-- Content goes here: -->
+<group class="groupone">
+ <label for="name" class="labeltest"  />
+<field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+<div class="container">
+  <notebook>
+      <page string="Page1">
+        <group>
+<field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+        </group>
+      </page>
+      <page string="Page2">
+        <group>
+  <field name="name"  />
+<field name="date_published" />
+<field name="isbn" />
+<field name="active" />
+        </group>
+      </page>
+    </notebook>
+  
+</div>
+</group>
+</sheet>
+</form>
+</field>
+</record>
+
+
+<record id="view_tree_request_fund_deposit" model="ir.ui.view">
+<field name="name">Request Fund Dposit List</field>
+<field name="model">khazina.request_fund_deposit</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+ 
+<field name="date_published"/>
+</tree>
+</field>
+</record>
+
+
+
+
+ 
+
+
+</odoo>
