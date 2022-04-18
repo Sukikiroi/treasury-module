@@ -109,7 +109,13 @@ action="action_khazina_request_loan"
 
 
   <menuitem id="menu_khazina_order_coins_conversion"
-name="  أمر تحويل النقود المعدنية    "
+name="  أمر تحويل نقود معدنية موجهة  الى أوراق نقدية    "
+parent="menu_khazina_order"
+action="action_khazina_coins_conversion"
+/>
+
+  <menuitem id="menu_khazina_order_exchange"
+name="  أمر الصرف من الخزينة   "
 parent="menu_khazina_order"
 action="action_khazina_coins_conversion"
 />
@@ -128,7 +134,7 @@ action="action_khazina_coins_conversion"
 
 
 
-
+<!-- 
 <menuitem id="menu_khazina_proceeding"
 name="محضر"
 parent="menu_khazina"
@@ -139,7 +145,7 @@ action="action_khazina_proceeding"
 name=" محضر معاينة و اشهاد على مبلغ الصندوق"
 parent="menu_khazina_proceeding"
 action="action_khazina_proceeding"
-/>
+/> -->
 
 
 
@@ -171,7 +177,17 @@ action="action_khazina_testimonial_coins_conversion"
 />
 
 
+<menuitem id="menu_khazina_testimonial_order_exchange_done"
+name=" اشهاد بافراغ و تنفيد أمر الصرف من الخزينة"
+parent="menu_khazina_testimonial"
+action="action_khazina_testimonial_coins_conversion"
+/>
 
+<menuitem id="menu_khazina_testimonial_order_exchange_counting"
+name=" اشهاد بحساب و معاينة نقود معدنية في مال الخزينة موجهة للتحويل الورقي النقدي "
+parent="menu_khazina_testimonial"
+action="action_khazina_testimonial_coins_conversion"
+/>
 
 <!-- Action to open Request fund Deposit -->
 <record id="action_khazina_request_fund_deposit" model=
