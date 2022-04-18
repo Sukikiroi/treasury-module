@@ -10,6 +10,8 @@
     "application": True,
     
     "data": [
+        "reports/report_template.xml",
+        "reports/khazina_fund_deposit_report.xml",
         "security/khazina_security.xml",
         "security/ir.model.access.csv",
         "views/khazina_request_loan_view.xml",

@@ -6,8 +6,19 @@
 <form class="form">
 <header>
 <!-- Buttons will go here -->
- 
- 
+<field name="state" invisible="True" />
+<button name="do_clear_done" type="object"
+string="Clear Done"
+states="open,cancel"
+class="oe_highlight" />
+
+
+ <field name="state"
+widget="statusbar"
+options="{'clickable': True}"
+statusbar_visible="testimonial,request,order"
+/>
+
 </header>
 <sheet>
 <!-- Content goes here: -->
@@ -53,6 +64,7 @@
 <field name="recodreference" />
 <field name="time"/>
 <field name="date" />
+<field name="state" />
 </tree>
 </field>
 </record>
