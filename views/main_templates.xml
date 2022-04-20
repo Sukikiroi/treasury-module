@@ -1,0 +1,57 @@
+<odoo>
+
+<data>
+        <template id="assets" name="todo assets">
+            <script type="text/javascript" src="/khazina/static/src/js/service.js"></script>
+            <script type="text/javascript" src="/khazina/static/src/jsx/index.jsx"></script>
+        </template>
+
+
+
+
+
+    <template id="fund_catalog" name="todo index">&lt;!DOCTYPE html&gt;
+        <html>
+                <head>
+                <title>Custom React Todo</title>
+
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta http-equiv="content-type" content="text/html, charset=utf-8" />
+
+                <meta name="viewport" content=" width=1024, user-scalable=no"/>
+                <meta name="apple-mobile-web-app-capable" content="yes"/>
+                <meta name="mobile-web-app-capable" content="yes"/>
+
+                <link rel="shortcut icon" href="/web/static/src/img/favicon.ico" type="image/x-icon"/>                
+
+                <script type="text/javascript" id="loading-script" t-raw="init">
+                    var odoo = {
+                        csrf_token: "<t t-esc="request.csrf_token(None)"/>",
+                        session_info: <t t-raw="session_info"/>,
+                    };
+                    console.log(odoo)
+                    console.log('Heloooo')
+
+                </script>
+            </head>
+            <body>
+                <div class="o_main_content" id="todos-example"/>
+
+
+
+
+
+
+
+            </body>
+
+            <script src="https://unpkg.com/react@16/umd/react.development.js" ></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+                
+            <t t-call-assets="khazina.assets"/>
+
+
+        </html>
+        </template>
+</data>
+</odoo>

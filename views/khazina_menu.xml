@@ -68,30 +68,24 @@
 
 
 <menuitem id="menu_khazina_request"
-name="طلب"
+name="   ايداع"
 parent="menu_khazina"
 action="action_khazina_request_loan"
 />
 
 
 <menuitem id="menu_khazina_request_feed"
-name="طلب تغدية الحساب  "
+name=" تغدية الحساب  "
 parent="menu_khazina_request"
 action="action_khazina_request_feed"
 />
  <menuitem id="menu_khazina_request_loan"
-name="طلب  قرض  "
+name="  قرض  "
 parent="menu_khazina_request"
 action="action_khazina_request_loan"
 />
  
 
-  <menuitem id="menu_khazina_request_coins_conversion"
-name="  طلب تحويل النقود المعدنية    "
-parent="menu_khazina_request"
-action="action_khazina_coins_conversion"
-/>
- 
 
 
 
@@ -102,20 +96,20 @@ action="action_khazina_coins_conversion"
 
 
 <menuitem id="menu_khazina_order"
-name="أمر"
+name="تحويل"
 parent="menu_khazina"
 action="action_khazina_request_loan"
 />
 
 
   <menuitem id="menu_khazina_order_coins_conversion"
-name="  أمر تحويل نقود معدنية موجهة  الى أوراق نقدية    "
+name="   تحويل نقود معدنية موجهة  الى أوراق نقدية    "
 parent="menu_khazina_order"
 action="action_khazina_coins_conversion"
 />
 
   <menuitem id="menu_khazina_order_exchange"
-name="  أمر الصرف من الخزينة   "
+name="   الصرف من الخزينة   "
 parent="menu_khazina_order"
 action="action_khazina_coins_conversion"
 />
@@ -202,7 +196,7 @@ action="action_khazina_testimonial_coins_conversion"
 
 
   <menuitem id="menu_khazina_request_fund_deposit"
-name="  طلب ايداع مال الصندوق المحسوب و المصادق في الخزينة    "
+name="   ايداع مال الصندوق المحسوب و المصادق في الخزينة    "
 parent="menu_khazina_request"
 action="action_khazina_request_fund_deposit"
 />

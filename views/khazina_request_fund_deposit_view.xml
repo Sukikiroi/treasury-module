@@ -16,7 +16,7 @@ class="oe_highlight" />
  <field name="state"
 widget="statusbar"
 options="{'clickable': True}"
-statusbar_visible="testimonial,request,order"
+statusbar_visible="request,order"
 />
 
 </header>
@@ -28,7 +28,7 @@ statusbar_visible="testimonial,request,order"
 <field name="time"/>
 <field name="date" />
 <field name="record_editor_name" />
-<field name="record_editor_last_name" />
+
 <field name="record_editor_position" />
 <div class="container">
   <notebook>
@@ -39,14 +39,14 @@ statusbar_visible="testimonial,request,order"
         </group>
       
       </page>
-      <page string="ختم و توقيع">
-        <group>
-<field name="signature" widget="signature_stu"/>
-<field name="secretary_treasury_signature" widget="signature_stu"/>
-        </group>
-      </page>
+   
+      <page string=" النتيجة المتوصل اليها ">
+              <group>
+      <field name="note" widget="html" attrs="{'invisible':[('state', '==', 'request')]}"/>
+              </group>
+        </page>
     </notebook>
-  
+
 </div>
 </group>
 </sheet>
@@ -62,9 +62,11 @@ statusbar_visible="testimonial,request,order"
 <tree>
 <field name="recodnumber" />
 <field name="recodreference" />
+<field name="record_editor_name" />
 <field name="time"/>
 <field name="date" />
 <field name="state" />
+
 </tree>
 </field>
 </record>

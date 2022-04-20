@@ -1,12 +1,34 @@
 <odoo>
-<template id="report_template">
-    <t t-call="web.html_container">
+
+<template id="report_template"  >
+  <template id="report_assets_common_custom_fonts" name="Custom QWeb fonts" inherit_id="web.report_assets_common">
+    <xpath expr="." position="inside">
+        <link href="/your_module/static/src/css/test.css" rel="stylesheet" type="text/css"/>
+    </xpath>
+</template>
+   
+    <t t-call="web.html_container" t-lang="ar">
         <t t-foreach="docs" t-as="o">
            
-                <div class="page">
-                    <h2>Report title</h2>
-                    <p>This object's name is Abdelaziz </p>
-                </div>
+     <div class="page">
+<!-- Report header content -->
+<div class="bigcontainer">
+<div class="row bg-primary">
+<div class="col-3">Title</div>
+<h4><span t-field="o.date" /></h4>
+<h4><span t-field="o.note" /></h4>
+<h4><span t-field="o.recodnumber" /></h4>
+<h4><span t-field="o.time" /></h4>
+<h4><span t-field="o.state" /></h4>
+</div>
+<t t-foreach="docs" t-as="o">
+<div class="row">
+<!-- Report row content -->
+</div>
+</t>
+<!-- Report footer content -->
+</div> <!-- container -->
+</div>
     
         </t>
     </t>

@@ -1,12 +1,13 @@
 <odoo>
 <record id="action_khazina_fund_report"
 model="ir.actions.report">
-<field name="name">Fund  Deposit</field>
+<field name="name">طباعة الأمر</field>
 <field name="model">khazina.request_fund_deposit</field>
 <field name="report_type">qweb-pdf</field>
 <field name="report_name">khazina.report_template</field>
 <field name="report_file">khazina.report_template</field>
 <field name="binding_model_id"  ref="model_khazina_request_fund_deposit" />
+<field name="attachment_use" eval="True"/>
 
 <field name="binding_type">report</field>
 </record>
