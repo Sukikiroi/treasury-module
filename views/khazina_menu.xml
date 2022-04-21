@@ -25,14 +25,14 @@
 <!-- Action to open the Clients list -->
 <record id="action_khazina_request_loan" model=
 "ir.actions.act_window">
-<field name="name"> طلب قرض </field>
-<field name="res_model">khazina.request_loan</field>
+<field name="name"> طلب  ايداع </field>
+<field name="res_model">khazina.request_fund_deposit</field>
 <field name="view_id" ref="khazina.view_form_loan"/>
 <field name="view_id" ref="khazina.view_tree_loan"/>
 <field name="view_id" ref="khazina.view_search_loan"/>
 
 
-<field name="view_mode">tree,form</field>
+<field name="view_mode">tree,graph,kanban,form</field>
 </record>
 
 
@@ -74,17 +74,17 @@ action="action_khazina_request_loan"
 />
 
 
-<menuitem id="menu_khazina_request_feed"
+<!-- <menuitem id="menu_khazina_request_feed"
 name=" تغدية الحساب  "
 parent="menu_khazina_request"
 action="action_khazina_request_feed"
-/>
- <menuitem id="menu_khazina_request_loan"
+/> -->
+ <!-- <menuitem id="menu_khazina_request_loan"
 name="  قرض  "
 parent="menu_khazina_request"
 action="action_khazina_request_loan"
 />
- 
+  -->
 
 
 

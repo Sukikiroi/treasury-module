@@ -16,7 +16,8 @@ class="oe_highlight" />
  <field name="state"
 widget="statusbar"
 options="{'clickable': True}"
-statusbar_visible="request,order"
+statusbar_visible="request,order,done"
+
 />
 
 </header>
@@ -30,6 +31,10 @@ statusbar_visible="request,order"
 <field name="record_editor_name" />
 
 <field name="record_editor_position" />
+
+<field name="amount_number" />
+<field name="amount_letters" />
+
 <div class="container">
   <notebook>
       <page string="طبقا لما هو مدون في المحضرين التاليين">
@@ -63,8 +68,12 @@ statusbar_visible="request,order"
 <field name="recodnumber" />
 <field name="recodreference" />
 <field name="record_editor_name" />
+
 <field name="time"/>
 <field name="date" />
+
+<field name="amount_number" />
+<field name="amount_letters" />
 <field name="state" />
 
 </tree>
